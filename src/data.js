@@ -3,11 +3,11 @@ import specialMenuImg2 from "./assets/bruchetta.svg";
 import specialMenuImg3 from "./assets/lemon dessert.jpg";
 
 export const pageLinks = [
-  { id: 1, href: "#", text: "Home" },
-  { id: 2, href: "#about", text: "About" },
-  { id: 3, href: "#menu", text: "Menu" },
-  { id: 4, href: "#reservations", text: "Reservations" },
-  { id: 5, href: "#order_online", text: "Order Online" },
+  { id: 1, href: "/", text: "Home" },
+  // { id: 2, href: "/about", text: "About" },
+  { id: 3, href: "/menu", text: "Menu" },
+  { id: 4, href: "/reservations", text: "Reservations" },
+  { id: 5, href: "/order_online", text: "Order Online" },
 ];
 export const socialLinks = [
   { id: 1, href: "www.facebook.com", text: "Facebook" },
