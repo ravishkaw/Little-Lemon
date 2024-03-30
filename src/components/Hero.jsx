@@ -1,4 +1,6 @@
 import heroImg from "../assets/restauranfood.jpg";
+import { Routes, Route, Link } from "react-router-dom";
+import Reservation from "./Reservation/Reservation";
 
 const Hero = () => {
   return (
@@ -13,7 +15,9 @@ const Hero = () => {
               traditional recipes served with a modern twist.
             </p>
             <button className="btn btn-warning" type="button">
-              Reserve a table
+              <Link to="/reservations" className="nav-link">
+                Reserve a table
+              </Link>
             </button>
           </div>
           <div className="col text-center">
@@ -25,6 +29,9 @@ const Hero = () => {
             />
           </div>
         </div>
+        <Routes>
+          <Route path="/reservations" element={<Reservation />}></Route>
+        </Routes>
       </div>
     </section>
   );
