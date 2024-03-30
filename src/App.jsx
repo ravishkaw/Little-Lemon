@@ -31,7 +31,7 @@ const App = () => {
             }
           ></Route>
           <Route path="/menu" element={<Menu />} exact></Route>
-          <Route path="/reservation" element={<Reservation />}></Route>
+          <Route path="/reservations" element={<Reservation />}></Route>
           <Route path="/order_online" element={<Order />}></Route>
         </Routes>
       </main>
