@@ -1,4 +1,6 @@
 import { specialMenu } from "../data";
+import { Routes, Route, Link } from "react-router-dom";
+import Menu from "./Menu/Menu"
 
 const Specials = () => {
   return (
@@ -6,7 +8,11 @@ const Specials = () => {
       <div className="container mt-5">
         <div className="d-flex justify-content-between">
           <h1>This Weeks Specials !</h1>
-          <button className="btn btn-dark">Online Menu</button>
+          <button className="btn btn-dark">
+            <Link to="/menu" className="nav-link">
+              Online Menu
+            </Link>
+          </button>
         </div>
         <div className="row">
           {specialMenu.map((special) => {
@@ -27,6 +33,9 @@ const Specials = () => {
           })}
         </div>
       </div>
+      <Routes>
+        <Route path="/menu" element={<Menu />}></Route>
+      </Routes>
     </section>
   );
 };
