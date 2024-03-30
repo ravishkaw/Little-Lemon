@@ -33,7 +33,7 @@ const Navbar = () => {
             <HashLink className="nav-link" smooth to="/#about">
               About
             </HashLink>
-            <button className="btn login">Login</button>
+            {/* <button className="btn login">Login</button> */}
           </div>
         </div>
       </div>
